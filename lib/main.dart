@@ -27,6 +27,7 @@ class _MyAppState extends State<MyApp> {
           backgroundColor: HexColor(backgroundColor),
           body: Column(
             children: [
+              // Header
               Container(
                 width: deviceWidth,
                 height: deviceHeight / 3,
@@ -56,6 +57,7 @@ class _MyAppState extends State<MyApp> {
                   ],
                 ),
               ),
+              //Top Column
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
@@ -206,6 +208,7 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
               ),
+              //Completed Text
               const Padding(
                   padding: EdgeInsets.only(left: 20),
                   child: Align(
@@ -213,13 +216,160 @@ class _MyAppState extends State<MyApp> {
                       child: Text(
                         "Completed",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 18),
-                      ))),
-              const Expanded(
-                child: Column(
-                  children: [
-                    Text("Selam"),
-                  ],
+                            fontWeight: FontWeight.bold, fontSize: 18
+                        ),
+                      )
+                    )
+                  ),
+              //Bottom Column
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                const Icon(
+                                  Icons.notes_outlined,
+                                  size: 50,
+                                ),
+                                const Text(
+                                  "Study Lessons",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 21),
+                                ),
+                                Checkbox(
+                                    value: isChecked,
+                                    onChanged: (val) => {
+                                          setState(() {
+                                            isChecked = val!;
+                                          })
+                                        }),
+                              ]),
+                        ),
+                      ),
+                        Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                const Icon(
+                                  Icons.notes_outlined,
+                                  size: 50,
+                                ),
+                                const Text(
+                                  "Study Lessons",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 21),
+                                ),
+                                Checkbox(
+                                    value: isChecked,
+                                    onChanged: (val) => {
+                                          setState(() {
+                                            isChecked = val!;
+                                          })
+                                        }),
+                              ]),
+                        ),
+                      ),
+                        Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                const Icon(
+                                  Icons.notes_outlined,
+                                  size: 50,
+                                ),
+                                const Text(
+                                  "Study Lessons",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 21),
+                                ),
+                                Checkbox(
+                                    value: isChecked,
+                                    onChanged: (val) => {
+                                          setState(() {
+                                            isChecked = val!;
+                                          })
+                                        }),
+                              ]),
+                        ),
+                      ),
+                        Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                const Icon(
+                                  Icons.notes_outlined,
+                                  size: 50,
+                                ),
+                                const Text(
+                                  "Study Lessons",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 21),
+                                ),
+                                Checkbox(
+                                    value: isChecked,
+                                    onChanged: (val) => {
+                                          setState(() {
+                                            isChecked = val!;
+                                          })
+                                        }),
+                              ]),
+                        ),
+                      ),
+                        Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                const Icon(
+                                  Icons.notes_outlined,
+                                  size: 50,
+                                ),
+                                const Text(
+                                  "Study Lessons",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 21),
+                                ),
+                                Checkbox(
+                                    value: isChecked,
+                                    onChanged: (val) => {
+                                          setState(() {
+                                            isChecked = val!;
+                                          })
+                                        }),
+                              ]),
+                        ),
+                      ),
+                    ]),
+                  ),
                 ),
               ),
               ElevatedButton(
